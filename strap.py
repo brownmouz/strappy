@@ -9,10 +9,9 @@ WIDTH = 800
 HEIGHT = 700
 MAX_COL = 255
 MIN_COL = 0
-USER1 = 'Hayden'
-USER2 = 'Monica'
+USER1 = ''
+USER2 = ''
 
-print(USER1, USER2)
 history_available = False
 max_points = 50
 
@@ -24,8 +23,6 @@ if exists(userlist):
         USER1, USER2 = users[0], users[1]
 else:
     raise ValueError('No user list ("users.txt") in current directory')
-    
-print(USER1, USER2)
 
 # If the log file exists, read history to df
 logfile = os.path.expanduser('~/inputs.log')
